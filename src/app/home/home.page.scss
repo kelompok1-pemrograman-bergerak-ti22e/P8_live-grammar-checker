@@ -1,0 +1,80 @@
+.info-card {
+  background-color: var(--ion-color-light);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  
+  p {
+    font-size: 0.9rem;
+    color: var(--ion-color-medium);
+    margin: 0;
+  }
+}
+
+.grammar-input {
+  margin-bottom: 20px;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  
+  p {
+    margin-top: 10px;
+    color: var(--ion-color-medium);
+  }
+}
+
+.result-card {
+  border-radius: 15px;
+  margin-top: 20px;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.result-card.correct {
+  border-left: 5px solid var(--ion-color-success);
+}
+
+.result-card.incorrect {
+  border-left: 5px solid var(--ion-color-danger);
+}
+
+.correction-section {
+  margin-top: 15px;
+  
+  .corrected-text {
+    background-color: var(--ion-color-light);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin-top: 8px;
+    border-left: 4px solid var(--ion-color-primary);
+    font-style: italic;
+  }
+}
+
+.success-message {
+  text-align: center;
+  padding: 15px;
+  color: var(--ion-color-success);
+  font-size: 1.1rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
