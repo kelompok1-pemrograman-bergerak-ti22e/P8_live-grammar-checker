@@ -1,0 +1,7 @@
+{
+  "name": "live-grammar-checker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
